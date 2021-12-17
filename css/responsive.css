@@ -1,0 +1,90 @@
+/*================
+extra small device
+=================*/
+
+@media (max-width : 575px){
+    .navbar{
+        top: 0;
+    }
+
+    .navbar .navbar-nav{
+        background: #fff;
+        text-align: center;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 0px;
+    }
+
+    /* navbar css ends */
+
+    #banner .banner-person::before {
+        display: none;
+    }
+
+    #banner .banner-person::after {
+        display: none;
+    }
+
+    #banner .banner-person .person-border::before {
+        display: none;
+    }
+
+    #banner .banner-person .person-border::after {
+        display: none;
+    }
+
+    #banner .banner-person .person-border2 {
+        display: none;
+    }
+
+    #banner .banner-person .banner-mssge {
+        display: none;
+    }
+
+    #banner .banner-text p {
+        padding-top: 70px;
+    }
+
+    /* banner css ends */
+
+    #portfolio .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #portfolio .portfolio-nav ul li::after{
+        display: none;
+    }
+
+    #portfolio .portfolio-nav ul li {
+        margin-right: 0px !important; 
+    }
+
+    #portfolio .portfolio-item {
+        width: 100%;
+        margin-right: 0 !important;
+        margin-top: 30px !important;
+        margin-bottom: 30px !important; 
+    }
+
+    /* portfolio css ends */
+
+    #work .work-item {
+        margin-bottom: 30px;
+    }
+
+    /* work css ends */
+
+    footer::after {
+        display: none;
+    }
+
+    footer::before {
+        display: none;
+    }
+}
+
+/*================
+extra small device
+=================*/

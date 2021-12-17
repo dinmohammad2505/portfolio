@@ -1,0 +1,842 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+/*============
+font css ends
+============*/
+
+:root{
+   --hf : 'Abril Fatface' , cursive ;
+   --mf : 'Ubuntu', sans-serif ;
+   --sf : 'Open Sans', sans-serif ;
+   --brand : #00bbff ;
+   --cl1 : #444444 ;
+   --brand2 : #0066e7;
+   --cl2 : #222222 ;
+   --bg1 : #f5f5f5 ;
+   --bg2 : #eaeaea ;
+}
+
+/*============
+root css ends
+============*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+li{
+    list-style: none;
+}
+
+/*============
+common css ends
+============*/
+
+.ubu-reg{
+    font-family : var(--mf);
+    font-weight: 400;
+}
+
+.ubu-light{
+    font-family : var(--mf);
+    font-weight: 300;
+}
+
+.ubu-med{
+    font-family : var(--mf);
+    font-weight: 500;
+}
+
+.abril{
+    font-family: var(--hf);
+    font-weight: 400;
+}
+
+.open-semi{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+/*==================
+font family css ends
+===================*/
+
+.fs-20{
+    font-size: 20px;
+}
+
+.fs-24{
+    font-size: 24px;
+}
+
+.fs-32{
+    font-size: 32px;
+}
+
+.fs-34{
+    font-size: 34px;
+}
+
+.fs-16{
+    font-size: 16px;
+}
+
+.fs-50{
+    font-size: 50px;
+}
+
+.fs-118{
+    font-size: 118px;
+}
+
+.cta-btn{
+    display: inline-block;
+    line-height: 44px;
+    border-radius: 5px;
+    padding: 0 20px;
+    background: linear-gradient(to right , var(--brand),var(--brand2));
+    
+}
+
+.cta-btn:hover{
+    background: linear-gradient(to right , var(--brand2),var(--brand));
+    transition: all linear .4s;
+}
+
+/*==================
+font size css ends
+===================*/
+
+.mr-30{
+    margin-right: 30px;
+}
+
+.pt-52{
+    padding-top: 52px !important;
+}
+
+.pt-23{
+    padding-top: 23px !important;
+}
+
+.pb-52{
+    padding-bottom: 52px !important;
+}
+
+/*==================
+spacing css ends
+===================*/
+
+.navbar{
+    z-index: 9999;
+}
+
+.navfix{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: #ddd;
+    animation: fix linear 1s;
+}
+
+@keyframes fix{
+    from{
+        top: -50px;
+    }
+    to{
+        top: 0px;
+    }
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding-left: 48px;
+    padding-right: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: var(--brand);
+    transition: all linear .4s;
+}
+
+/*==================
+navbar css ends
+===================*/
+
+#banner{
+    /* color: var(--bg1); */
+    padding-top: 30px;
+}
+
+#banner .side-text {
+	left: -28px;
+}
+
+#banner .side-text h3{
+    writing-mode: sideways-lr;
+    color: var(--cl2);
+    opacity: 5%;
+}
+
+#banner .banner-chat-content{
+    padding-top: 125px;
+}
+
+#banner .banner-chat-item p {
+	background-color: #fff;
+	margin-bottom: 10px !important;
+	padding: 10px 20px;
+	border-radius: 10px;
+	color: var(--cl2);
+	filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.3));
+}
+
+/* #banner .banner-chat-item:nth-of-type(even) p{
+    transform: translateX(-50px);
+} */
+
+#banner .banner-chat-form form{
+    background-color: var(--bg1);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#banner .banner-chat-form form input{
+    border: none;
+    outline: none;
+    width: 70%;
+}
+
+#banner .banner-chat-form form a i{
+    font-size: 16px;
+    color: var(--cl2);
+}
+
+#banner .banner-text span{
+    margin: 0 12px; 
+}
+
+#banner .banner-person{
+    position: relative;
+    z-index: 1;
+}
+
+#banner .banner-person .person-border{
+    position: relative;
+}
+
+#banner .banner-person .person-border::before {
+	content: '';
+	width: 10px;
+	height: 285px;
+	background-color: var(--brand);
+	position: absolute;
+	top: 75px;
+	left: 58px;
+	z-index: 85;
+}
+
+#banner .banner-person .person-border::after {
+	content: '';
+	width: 145px;
+	height: 10px;
+	background-color: var(--brand2);
+	position: absolute;
+	top: 65px;
+	right: 50px;
+	z-index: 88;
+}
+
+#banner .banner-person .person-border2 {
+	width: 140px;
+	height: 10px;
+	background-color: var(--brand);
+	position: absolute;
+	top: 65px;
+	left: 58px;
+	z-index: 88;
+}
+
+#banner .banner-person::before {
+	content: '';
+	width: 10px;
+	height: 450px;
+	background-color: var(--brand2);
+	position: absolute;
+	top: 75px;
+	right: 50px;
+	z-index: 99;
+}
+
+#banner .banner-person::after {
+	content: '';
+	width: 80px;
+	height: 10px;
+	background-color: var(--brand2);
+	position: absolute;
+	bottom: 45px;
+	right: 50px;
+	z-index: 89;
+}
+
+#banner .banner-person img{
+    position: relative;
+    z-index: 90;
+}
+
+#banner .banner-person .banner-mssge {
+	width: 70px;
+	height: 70px;
+	background-color: var(--bg1);
+	border-radius: 50%;
+	box-sizing: border-box;
+	position: absolute;
+	top: 200px;
+	left: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+    cursor: pointer;
+    filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.3));
+}
+
+#banner .banner-person .banner-mssge i{
+    font-size: 32px;
+    /* line-height: 44px; */
+    color: var(--brand);
+}
+
+#banner .banner-text p{
+    color: var(--brand);
+    padding-top: 240px;
+}
+
+#banner .banner-text h1{
+    color: var(--brand);
+    margin-top: -10px;
+    margin-bottom: 10px !important;
+}
+
+#banner .banner-text a{
+    margin-top: 30px;
+}
+
+/*==================
+banner css ends
+===================*/
+
+#about{
+    padding: 100px 0px;
+}
+
+#about .side-text{
+    right: 150px;
+}
+
+#about .side-text h3{
+    writing-mode: sideways-lr;
+    color: var(--cl2);
+    opacity: 5%;
+    font-size: 75px;
+    white-space: nowrap;
+}
+
+#about .about-person {
+    position: relative;
+}
+
+#about .about-person .about-shape {
+	position: absolute;
+	top: 101px;
+	left: -15px;
+	z-index: -1;
+}
+
+#about  .about-text h3{
+    color: var(--cl2);
+    margin-bottom: 60px !important;
+}
+
+#about  .about-text p{
+    color: var(--cl1);
+    line-height: 24px;
+    margin-bottom: 30px !important;
+}
+
+#about .about-icon p{
+    color: var(--cl1);
+}
+
+#about .about-icon p span{
+    color: var(--cl2);
+}
+
+#about .about-text .about-icon .about-item{
+    margin-bottom: 40px;
+    transition: all linear .4s;
+}
+
+#about .about-text .about-icon .about-item:hover{
+    background-color: var(--bg1);
+    filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.3));   
+}
+
+/*============
+about css ends
+============*/
+
+#services{
+    background-color: var(--bg1);
+    padding: 60px 0;
+    position: relative;
+}
+
+#services .side-text{
+    left: 50px;
+}
+
+#services .side-text h3{
+    writing-mode: sideways-lr;
+    color: var(--cl2);
+    opacity: 5%;
+    font-size: 70px;
+}
+
+#services .service-item{
+    padding: 30px;
+    position: relative;
+}
+
+#services .service-item::after{
+    content: '';
+    width: 3px;
+    height: 0%;
+    background: linear-gradient(0deg,var(--brand),var(--brand2));
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    transition: all linear .4s;
+}
+
+#services .service-item:hover::after{
+    height: 100%;
+}
+
+#services .service-item h4{
+    color: var(--cl2);
+    margin: 20px 0 30px !important;
+}
+
+#services .service-item:hover{
+    background-color: #fff;
+    transition: all linear .4s;
+}
+
+#services .service-item p{
+    color: var(--cl1);
+    line-height: 24px;
+}
+
+/*==================
+service css ends
+===================*/
+
+#portfolio{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#portfolio header h3{
+    margin-bottom: 60px;
+}
+
+#portfolio .portfolio-nav ul li{
+    margin-right: 42px !important;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+#portfolio .portfolio-nav ul li::after{
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: var(--cl2);
+    position: absolute;
+    top: 0;
+    right: -20px;
+}
+
+#portfolio .portfolio-nav ul li:last-child::after{
+    display: none;
+}
+
+#portfolio .portfolio-nav ul li:last-child{
+    margin-right: 0;
+}
+
+#portfolio .nav-tabs {
+	border-bottom: none;
+}
+
+#portfolio .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+	/* color: #495057; */
+	background: transparent;
+	border: none;
+}
+
+#portfolio .nav-tabs .nav-link{
+    background: transparent;
+	border: none;
+    font-family: var(--mf);
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--cl1);
+}
+
+#portfolio .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+	border: none;
+	outline: none;
+    color: var(--brand);
+    transition: all linear .4s;
+}
+
+#portfolio .portfolio-item{
+    width: 20%;
+    margin-right: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#portfolio .portfolio-item:last-of-type{
+    margin-right: 0;
+}
+
+#portfolio .portfolio-item .portfolio-overlay{
+    background-color: rgba(0, 0, 0, 0.90);
+    top: -100% !important;
+}
+
+#portfolio .portfolio-item:hover .portfolio-overlay{
+    top: 0 !important;
+    transition: all linear .4s;
+}
+
+#portfolio .portfolio-item .portfolio-overlay i{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    background-color: #fff;
+    text-align: center;
+    color: var(--brand);
+    font-size: 16px;
+}
+
+/*==================
+portfolio css ends
+===================*/
+
+#work{
+    padding-bottom: 100px;
+}
+
+#work .side-text{
+    right: 100px;
+}
+
+#work .side-text h3{
+    writing-mode: sideways-lr;
+    color: var(--cl2);
+    opacity: 5%;
+    font-size: 55px;
+    white-space: nowrap;
+}
+
+#work header h3{
+    margin-bottom: 60px;
+}
+
+#work .work-item{
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+#work .work-item::after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right,var(--brand),var(--brand2));
+	position: absolute;
+	bottom: -159px;
+	right: -173px;
+	border-radius: 50%;
+	transform: scale(0.1);
+    transition: all linear .4s;
+    z-index: 10;
+}
+
+#work .work-item:hover::after{
+    transform: scale(3);
+}
+
+#work .work-item .work-image{
+    padding: 30px 0;
+    background-color: var(--bg2);
+    transition: all linear .4s;
+}
+
+#work .work-item:hover .work-image{
+    background: transparent;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.6);
+    position: relative;
+    z-index: 12;
+}
+
+#work .work-text{
+    background-color: var(--bg1);
+    padding: 30px 0;
+    /* position: relative;
+    z-index: 12; */
+}
+
+#work .work-item:hover .work-text{
+    background: transparent;
+    position: relative;
+    z-index: 12;
+}
+
+#work .work-text h4{
+    color: var(--cl1);
+    margin-bottom: 10px !important;
+    transition: all linear .4s;
+}
+
+#work .work-item:hover .work-text h4{
+    color: #fff;
+}
+
+#work .work-text h6{
+    color: var(--cl1);
+    margin-bottom: 30px !important;
+    transition: all linear .4s;
+}
+
+#work .work-item:hover .work-text h6{
+    color: #fff;
+}
+
+#work .work-text p {
+	color: var(--cl1);
+	font-size: 14px;
+	line-height: 24px;
+	padding: 0 53px;
+    transition: all linear .4s;
+}
+
+#work .work-item:hover .work-text p{
+    color: #fff;
+}
+
+/*==================
+work css ends
+===================*/
+
+#funfact{
+    background: linear-gradient(to right,var(--brand),var(--brand2));
+    padding: 30px 0;
+}
+
+#funfact .fun-text h3{
+    margin-bottom: 20px !important;
+}
+
+#funfact .fun-text .cta-btn:hover{
+    background: #fff;
+    transition: all linear .4s;
+    color: var(--brand) !important;
+}
+
+#funfact .fun-text .cta-btn:first-of-type{
+    margin-right: 15px;
+}
+
+/*==================
+fun css ends
+===================*/
+
+#testimonial{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+#testimonial .side-text{
+    position: absolute;
+    left: 50px;
+}
+
+#testimonial .side-text h3{
+    writing-mode: sideways-lr;
+    color: var(--cl2);
+    opacity: 5%;
+    font-size: 60px;
+    white-space: nowrap;
+}
+
+#testimonial header h3{
+    padding-bottom: 60px !important;
+}
+
+#testimonial .testimonial-item .card-body{
+    background: var(--bg1);
+}
+
+/* #testimonial .testimonial-item:first-of-type{
+    margin-right: 30px !important;
+} */
+
+#testimonial .testimonial-item .card-body .card-text{
+    color: var(--cl2);
+    line-height: 30px;
+    margin-bottom: 15px !important;
+    padding-top: 60px;
+}
+
+#testimonial .testimonial-item .card-body .ratings{
+    margin-bottom: 20px !important;
+}
+
+#testimonial .testimonial-item .card-body .ratings i{
+    color: #febb1c;
+    font-size: 24px;
+}
+
+/*==================
+testimonial css ends
+===================*/
+#newsletter {
+    padding-bottom: 100px;
+}
+#newsletter header h3{
+    margin-bottom: 30px !important;
+}
+
+#newsletter .newsletter-form input {
+	border-color: var(--bg1);
+	border-radius: 15px;
+	height: 46px;
+	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.08);
+}
+
+#newsletter .newsletter-form button{
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    line-height: 46px;
+}
+
+/*==================
+newsletter css ends
+===================*/
+
+#brand{
+    padding-bottom: 100px;
+}
+
+#brand .brand-item img{
+    filter: grayscale(1);
+    transform: scale(0.9);
+    transition: all linear .4s;
+}
+
+#brand .brand-item:hover img{
+    transform: scale(1);
+}
+
+/*==================
+brand css ends
+===================*/
+
+footer{
+    background-color: var(--bg1);
+    padding-top: 55px;
+    position: relative;
+}
+
+footer::before {
+	content: '';
+	width: 40%;
+	height: 1px;
+	background: #ddd;
+	position: absolute;
+	left: 0;
+	bottom: 85px;
+}
+
+footer::after {
+	content: '';
+	width: 40%;
+	height: 1px;
+	background: #ddd;
+	position: absolute;
+	right: 0;
+	bottom: 85px;
+}
+
+footer .footer-brand p {
+	color: var(--cl1);
+	line-height: 24px;
+	padding-top: 30px;
+	padding-bottom: 60px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+footer .footer-contact .email {
+    color: var(--cl1);
+    padding: 20px 0;
+    display: inline-block;
+}
+
+footer .footer-social{
+    padding-bottom: 40px;
+}
+
+footer .footer-social a i{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    box-sizing: border-box;
+    color: #999;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: all linear .4s;
+}
+
+footer .footer-social a:last-of-type i{
+    margin-right: 0px;
+}
+
+footer .footer-social a i:hover{
+    border: 1px solid none;
+    background: linear-gradient(to right,var(--brand),var(--brand2));
+    color: #fff;
+}
